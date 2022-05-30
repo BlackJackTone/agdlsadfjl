@@ -48,6 +48,8 @@ O3: Framework
 We use framework to refer to the holistc design including sample level, join level, hardware level, and their interaction. We will make it clearer in Sec 4. As to the decision tree in Figure 7, please refer to C3 for our further update.
  
  
+<br />
+
 D1: Baseline
 
 See C2.
@@ -133,6 +135,8 @@ O5. Baseline
 See C2.
  
  
+<br />
+ 
 M1. Key Skewness
 
 Thank you for the careful examination. We will correct that to "uniform".
@@ -166,6 +170,8 @@ O4: 14 algorithms
 
 We will merge the algorithms that have similar behaviors in Figures 10-13 with detailed analysis to make the figures concise.
  
+ 
+<br />
  
 T1: Thank you for the correction, and we will remove the redundant references.
  
