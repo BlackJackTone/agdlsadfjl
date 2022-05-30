@@ -130,19 +130,19 @@ O4: Figure 7
 Sorry for this editorial error. The box Key Duplication(dup) should go out with a Low option, and point to the bottom right box Key Skewness(skew_key). Regarding the scaling to multiple cores, most algorithms perform well, except that MWay scales poorly with increasing input size due to its multi-way merge. We will update Figure 7 and add more details in Sec 5.3.
  
  
-O5. Baseline
+O5: Baseline
 
 See C2.
  
  
 <br />
  
-M1. Key Skewness
+M1: Key Skewness
 
 Thank you for the careful examination. We will correct that to "uniform".
  
  
-M2. The Wording of "..X speedup in throughput"
+M2: The Wording of "..X speedup in throughput"
 
 The ratio of the throughput of our method over that of the baseline.
  
