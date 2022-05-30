@@ -2,6 +2,8 @@
 
 Thank all reviewers for the constructive reviews. We will address all reviews in the revised paper. 
 
+ \ 
+
 ### **Common**
 
 C1: Narrative
@@ -71,7 +73,8 @@ It means joining two input stream over a single window, similar to tumbling wind
 D6: Sketch
 
 It's hard for skech to handle general tasks [14,A]. Its result stream is imaginary and it requires individual designs for different applications, or even different metrics of the same application. Thus they can not fit our requirement of adaptation. We will add more discussion in Sec 7.
-[A]  Z. Zhao, F. Li, and Y. Liu. "Efficient Join Synopsis Maintenance for Data Warehouse". In SIGMOD 2020.
+
+\[A\]  Z. Zhao, F. Li, and Y. Liu. "Efficient Join Synopsis Maintenance for Data Warehouse". In SIGMOD 2020.
  
  
 D7: Figure 6
@@ -172,9 +175,9 @@ T4: We will explain more about its usability benefits.
  
 T5: We apologize for the incorrect example of heuristic sampling, and we will replace the original reference with the appropriate ones, specifically: 
 
-[A] T. Johnson, S. Muthukrishnan, I. Rozenbaum. "Sampling algorithms in a stream operator". In SIGMOD 2005.
+\[A\] T. Johnson, S. Muthukrishnan, I. Rozenbaum. "Sampling algorithms in a stream operator". In SIGMOD 2005.
 
-[B] D. L. Quoc, R. Chen, P. Bhatotia, et al. "Streamapprox: Approximate computing for stream analytics". In CoRR 2017.
+\[B\] D. L. Quoc, R. Chen, P. Bhatotia, et al. "Streamapprox: Approximate computing for stream analytics". In CoRR 2017.
 
  
 T6: We will explain more the advantages of reservoir sampling and improve the implementation.
