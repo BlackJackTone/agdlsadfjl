@@ -29,6 +29,8 @@ Besides, as proved in Sec 6.3, sampling and hardware optimizated algorithms need
 We will detail more in Sec 5.
  
  
+<br />
+
 ### **Reviewer#1**
 
 O1: Novelty
@@ -82,7 +84,8 @@ D7: Figure 6
 
 We will remove it as suggested.
  
- 
+
+<br />
  
 ### **Reviewer#2**
 
@@ -100,7 +103,8 @@ O3: Throughput
 
 Sorry for the misunderstanding. Throughput is defined as the number of input tuples processed per unit time, as stated in Sec 3.2. Therefore, the join size output does not contribute to the throughtput. Figure 11 (b) provides an experimental proof of it. Furthermore, the reason for using this definintion is that the definition of latency in this work concerns more about the join output, and we want to show more perspectives of the performance. We will make it clearer in Sec 6.3.
  
- 
+
+<br />
  
 ### **Reviewer#4**
 
@@ -138,7 +142,8 @@ M2. The Wording of "..X speedup in throughput"
 
 The ratio of the throughput of our method over that of the baseline.
  
- 
+
+<br />
  
 ### **Reviewer#5**
 
