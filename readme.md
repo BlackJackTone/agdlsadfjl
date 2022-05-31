@@ -19,7 +19,7 @@ When we evaluate the method selected by the decision tree, the baseline is the o
  
 C3: Decision tree
 
-The decision tree in Sec 5.3 has been proven successful for real-world datasets, and it can easily be changed to an automatically built structure by adding a training set, adapting to diverse workloads and parallel architectures, including future-proof CPUs. Regarding the thresholds for High and Low, we will add the learned results to the appendix. We will update Sec 5.3 and open source to contribute to the community.
+The decision tree in Sec 5.3 has been proven successful for real-world datasets, and it can be easily changed to an automatically built structure by adding a training set, adapting to diverse workloads and parallel architectures, including future-proof CPUs. Regarding the thresholds for High and Low, we will add the learned results to the appendix. We will update Sec 5.3 and open source to contribute to the community.
  
  
 C4: Hardware
@@ -77,7 +77,7 @@ It means joining two input stream over a single window, similar to tumbling wind
  
 D6: Sketch
 
-It's hard for skech to handle general tasks \[14,A\]. Its result stream is virtual and it requires individual designs for different applications, or even different metrics of the same application. Thus they can not fit our requirement of adaptation. We will add more discussion in Sec 7.
+It's hard for skech to handle general tasks \[14,A\]. Its result stream is virtual and it requires individual designs for different applications, or even different metrics of the same application. Thus, they cannot satisfy our requirement of adaptation. We will add more discussion in Sec 7.
 
 \[A\]  Z. Zhao, F. Li, and Y. Liu. "Efficient Join Synopsis Maintenance for Data Warehouse". In SIGMOD 2020.
  
@@ -122,7 +122,7 @@ See C3.
  
 O3: Tradeoff
 
-The tradeoff is reflected in the selection of the appropriate algorithm and sampling rate according to the user's needs. The algorithm selection is settled by the decision tree. The sampling rate is chosen as large as possible under the constraints. For example, in Figure 12 (a), we show the relation between latency and join size. If user limits the latency, the choice is the option with the highest join size under such restriction, which means the tradeoff satisfying the performance metrics while achieving the suitable quality that can be achieved. We will explain it more clearly in Sec 6.3.
+The tradeoff is reflected in the selection of the appropriate algorithm and sampling rate according to the user's needs. The algorithm selection is settled by the decision tree. The sampling rate is chosen as large as possible under the constraints. For example, in Figure 12 (a), we show the relation between latency and join size. If user limits the latency, the choice is the option with the highest join size under such restriction, which means the tradeoff satisfying the performance metrics while achieving the suitable quality that can be obtained. We will explain it more clearly in Sec 6.3.
  
  
 O4: Figure 7
@@ -204,7 +204,7 @@ T8: As described in Algorithm 1, the hybrid sampling is divided into two indepen
 T9: We will make it clear ahead in Sec 5.1.
  
  
-T10: We perceive that the maximum data utilization case just results in a more concise and no simpler case than the minimum data utilization, which not only serves the application but also forms an upper and lower bound together with the minimum utilization case.
+T10: We perceive that the maximum data utilization case just results in a more concise and no simpler case than the minimum data utilization. It not only serves the application but also forms an upper and lower bound together with the minimum utilization case.
  
  
 T11: We will detail more in Sec 5.1.
