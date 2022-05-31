@@ -103,7 +103,7 @@ See C1.
  
 O3: Throughput
 
-Sorry for the misunderstanding. Throughput is defined as the number of input tuples processed per unit time, as stated in Sec 3.2. Therefore, the join size output does not contribute to the throughtput. Figure 11 (b) provides an experimental proof of it. Furthermore, the reason for using this definition is that the definition of latency in this work concerns more about the join output, and we want to show more perspectives of the performance. We will make it clearer in Sec 6.3.
+Sorry for the misunderstanding. Throughput is defined as the number of input tuples processed per unit time, as stated in Sec 3.2. Therefore, the join size output does not contribute to the throughput. Figure 11 (b) provides an experimental proof of it. Furthermore, the reason for using this definition is that the definition of latency in this work concerns more about the join output, and we want to show more perspectives of the performance. We will make it clearer in Sec 6.3.
  
 
 <br />
@@ -122,7 +122,7 @@ See C3.
  
 O3: Tradeoff
 
-The tradeoff is reflected in the selection of the appropriate algorithm and sampling rate according to the user's needs. The algorithm selection is settled by the decision tree. The sampling rate is chosen as large as possible under the constraints. For example, in Figure 12 (a), we show the relations between latency and join size. If user limits the latency, the choice is the option with the highest join size under such restriction, which means the tradeoff satisfiying the performance metrics while achieving the suitable quality that can be achieved. We will explain it more clearly in Sec 6.3.
+The tradeoff is reflected in the selection of the appropriate algorithm and sampling rate according to the user's needs. The algorithm selection is settled by the decision tree. The sampling rate is chosen as large as possible under the constraints. For example, in Figure 12 (a), we show the relation between latency and join size. If user limits the latency, the choice is the option with the highest join size under such restriction, which means the tradeoff satisfying the performance metrics while achieving the suitable quality that can be achieved. We will explain it more clearly in Sec 6.3.
  
  
 O4: Figure 7
@@ -198,7 +198,7 @@ T6: We will explain more the advantages of reservoir sampling and improve the im
 T7: We will clarify the meaning ahead.
  
  
-T8: As discribed in Algorithm 1, the hybrid sampling is divided into two independent layers, which are universal and Bernouli sampling with parameters p and q. We will add explanation in Sec 5.1.1.
+T8: As described in Algorithm 1, the hybrid sampling is divided into two independent layers, which are universal and Bernoulli sampling with parameters p and q. We will add explanation in Sec 5.1.1.
  
  
 T9: We will make it clear ahead in Sec 5.1.
@@ -213,7 +213,7 @@ T11: We will detail more in Sec 5.1.
 T12: We will make it clear in Sec 5.2.
  
  
-T13: For JM, each kernel is assigned a whole stream R and one of the disjoint subsets of stream S, so the sum of the expectation in each core is consistent with the original version. We will explain it more in Sec 5.3.
+T13: For JM, each kernel is assigned a whole stream R and one of the disjoint subsets of stream S, so the sum of the expectations in each core is consistent with the original version. We will explain it more in Sec 5.3.
  
  
 T14: We concluded the phenomenon based on the experimental results, so we will move it to Sec 6. We will try to understand this mathematically and add more discussion.
