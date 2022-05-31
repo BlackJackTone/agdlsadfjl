@@ -14,7 +14,7 @@ We will reduce the length of the preliminaries and implementation details, and p
  
 C2: Baseline
 
-When we evaluate the method selected by the decision tree, the baseline is the optimal method of the 8 methods mentioned in Sec 2.1. When we evaluate a method in the solution space(i.e. the 14 algorithms), the baseline is the original join algorithm. For example, the baseline of S-MPass is MPass. We will add these details in Sec 6.
+When we evaluate the method selected by the decision tree, the baseline is the optimal method of the 8 methods mentioned in Sec 2.1. When we evaluate a method in the solution space (i.e., the 14 algorithms), the baseline is the original join algorithm. For example, the baseline of S-MPass is MPass. We will add these details in Sec 6.
  
  
 C3: Decision tree
