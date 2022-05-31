@@ -9,7 +9,7 @@ Thank all reviewers for the constructive reviews. We will address all reviews in
 
 C1: Narrative
 
-We will reduce the length of the preliminaries and implementation details, and place more emphasis on novelty in sampling and algorithm selection. The thread will be presented in the following way: 1) We design theoretically feasible sampling solutions, but their performance is unknown. 2) Accordingly, we integrate sampling to 8 multicore join algorithms, and their behaviors demonstrate the huge impact of the actual implementation on all aspects of performance and quality. 3) In turn, we design a decision tree to choose the suitable solution taking both stream and sampling features into consideration.
+We will reduce the length of the preliminaries and implementation details, and place more emphasis on the novelty in sampling and algorithm selection. The thread will be presented in the following way: 1) We design theoretically feasible sampling solutions, but their performance is unknown. 2) Accordingly, we integrate sampling to 8 multicore join algorithms, and their behaviors demonstrate the huge impact of the actual implementation on all aspects of performance and quality. 3) In turn, we design a decision tree to choose the suitable solution taking both stream and sampling features into consideration.
  
  
 C2: Baseline
