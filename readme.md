@@ -137,7 +137,7 @@ See C2.
  
 <br />
  
-M1: Key Skewness
+M1: Key skewness
 
 Thank you for the careful examination. We will correct that to "uniform".
  
