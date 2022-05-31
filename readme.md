@@ -19,13 +19,13 @@ When we evaluate the method selected by the decision tree, the baseline is the o
  
 C3: Decision tree
 
-The decision tree in Sec 5.3 has been proven sucessful for real-world datasets, and it can easily be changed to an automatically built structure by adding a training set, adapting to diverse workloads and parallel architectures, including future-proof CPUs. Regarding the thresholds for High and Low, we will add the learned results to the appendix. We will update Sec 5.3 and open source to contribute to the community.
+The decision tree in Sec 5.3 has been proven successful for real-world datasets, and it can easily be changed to an automatically built structure by adding a training set, adapting to diverse workloads and parallel architectures, including future-proof CPUs. Regarding the thresholds for High and Low, we will add the learned results to the appendix. We will update Sec 5.3 and open source to contribute to the community.
  
  
 C4: Hardware
 
-Sec 3.3 shows that the hardware architecture significantly influnces the performance, where the 8-core version with a sampling rate of 0.9 reduces 90%+ lantency compared to the sequential version. For practical use, we develop both thread and data-level parallelisms, and Sec 6.5 demonstrates their scalability.
-Besides, as proved in Sec 6.3, sampling and hardware optimizated algorithms need to be studied together because of the influence on both performance and quality. To solve this problem, we develop a decision tree considering both sampling and stream features.
+Sec 3.3 shows that the hardware architecture significantly influences the performance, where the 8-core version with a sampling rate of 0.9 reduces 90%+ lantency compared to the sequential version. For practical use, we develop both thread and data-level parallelisms, and Sec 6.5 demonstrates their scalability.
+Besides, as proved in Sec 6.3, sampling and hardware optimized algorithms need to be studied together because of the influence on both performance and quality. To solve this problem, we develop a decision tree considering both sampling and stream features.
 We will detail more in Sec 5.
  
  
@@ -35,8 +35,8 @@ We will detail more in Sec 5.
 
 O1: Novelty
 
-We claim that an efficient sampling-based intra-window join must holistcly optimize sampling, stream joins, and hardware parallelism. To achieve this goal, we define two sampling functions for each of the stream, one for building and one for probing, which allows tuples to be used for probing even though they are not retained in the sample. Our work fills the blank where there is no sampling designed considering the execution of stream join. To ensure usability, we explored how to design 14 available algorithms and gave a high-speed implementation, and the decision tree is designed to solve selection problems. Moreover, we provide a strong theoretical component associated with the sampling in the appendix, as well as over tens of thousands lines of robust code implementation. We will carefully revise the paper to make our novelty clearer if we are given the precious chance.
- 
+We claim that an efficient sampling-based IaWJ must holistically optimize sampling, stream joins, and hardware parallelism. To achieve this, we define two sampling functions for each stream, one for building and one for probing, which allows tuples to probe even though they are not retained in the sample. Our work fills the blank where there is no sampling designed considering the execution of stream join. To ensure usability, we design 14 algorithms and give an efficient implementation. The decision tree solves the selection problems. Moreover, we provide a strong theoretical component associated with the sampling in the appendix and over 100,000 lines of robust code. We will carefully revise the paper to highlight our novelty if we are given the precious chance.
+
  
 O2: Narrative
 
@@ -77,7 +77,7 @@ It means joining two input stream over a single window, similar to tumbling wind
  
 D6: Sketch
 
-It's hard for skech to handle general tasks [14,A]. Its result stream is imaginary and it requires individual designs for different applications, or even different metrics of the same application. Thus they can not fit our requirement of adaptation. We will add more discussion in Sec 7.
+It's hard for skech to handle general tasks \[14,A\]. Its result stream is virtual and it requires individual designs for different applications, or even different metrics of the same application. Thus they can not fit our requirement of adaptation. We will add more discussion in Sec 7.
 
 \[A\]  Z. Zhao, F. Li, and Y. Liu. "Efficient Join Synopsis Maintenance for Data Warehouse". In SIGMOD 2020.
  
@@ -103,7 +103,7 @@ See C1.
  
 O3: Throughput
 
-Sorry for the misunderstanding. Throughput is defined as the number of input tuples processed per unit time, as stated in Sec 3.2. Therefore, the join size output does not contribute to the throughtput. Figure 11 (b) provides an experimental proof of it. Furthermore, the reason for using this definintion is that the definition of latency in this work concerns more about the join output, and we want to show more perspectives of the performance. We will make it clearer in Sec 6.3.
+Sorry for the misunderstanding. Throughput is defined as the number of input tuples processed per unit time, as stated in Sec 3.2. Therefore, the join size output does not contribute to the throughtput. Figure 11 (b) provides an experimental proof of it. Furthermore, the reason for using this definition is that the definition of latency in this work concerns more about the join output, and we want to show more perspectives of the performance. We will make it clearer in Sec 6.3.
  
 
 <br />
@@ -112,7 +112,7 @@ Sorry for the misunderstanding. Throughput is defined as the number of input tup
 
 O1: Adaptation
 
-The adaptation of our work is reflected in that ASSMJoin can satisfy different situations. The required results can be stream data or statistic values, and ASSMJoin can provide various results by adjusting the sampling with techniques detailed in Sec 5.1. The adaptation happens in canceling data materialization and changing sampling methods. We will add these details in Sec 5.1.
+The adaptation of our work is reflected in that ASSMJoin can satisfy different situations. The required results can be stream data or statistic values, and ASSMJoin can provide various results by adjusting the sampling with techniques detailed in Sec 5.1. The adaptation happens in changing sampling methods and canceling data materialization. We will add these details in Sec 5.1.
  
  
 O2: Decision tree
@@ -142,7 +142,7 @@ M1: Key skewness
 Thank you for the careful examination. We will correct that to "uniform".
  
  
-M2: The Wording of "..X speedup in throughput"
+M2: The wording of "..X speedup in throughput"
 
 The ratio of the throughput of our method over that of the baseline.
  
@@ -158,7 +158,7 @@ The assumption can be removed by introducing the order as a property (consistent
  
 O2: Reservoir sampling
 
-The pseudocode is consistent with both our formula derivation and code implementation. Using "observed stream" for estimation is not an easy problem, and this is one of the reasons why we introduced the order assumption in the O1. If we start join after the reservoir sampling is completely finished, the extra memory used during processing will not bring benefits in result. We will add a detailed discussion of it in Sec 5.1 and present the result not using "observed stream".
+The pseudocode is consistent with both our formula derivation and code implementation. Using "observed stream" for estimation is not an easy problem, and this is one of the reasons why we introduced the order assumption in O1. If we start join after the reservoir sampling is completely finished, the extra memory used during processing will not bring benefits in result. We will add a detailed discussion of it in Sec 5.1 and present the result not using "observed stream".
  
  
 O3: Hardware optimization
@@ -173,7 +173,7 @@ We will merge the algorithms that have similar behaviors in Figures 10-13 with d
  
 <br />
  
-T1: Thank you for the correction, and we will remove the redundant references.
+T1: Thank you for the correction. We will remove the redundant references.
  
  
 T2: We will move it as suggested.
@@ -204,7 +204,7 @@ T8: As discribed in Algorithm 1, the hybrid sampling is divided into two indepen
 T9: We will make it clear ahead in Sec 5.1.
  
  
-T10: We percive that the maximum data utilization case just results in a more concise and no simpler case than the minimum data utilization, which not only serves the application but also forms an upper and lower bound together with the minimum utilization case.
+T10: We perceive that the maximum data utilization case just results in a more concise and no simpler case than the minimum data utilization, which not only serves the application but also forms an upper and lower bound together with the minimum utilization case.
  
  
 T11: We will detail more in Sec 5.1.
